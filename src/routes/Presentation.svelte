@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount } from "svelte";
 
-	import Reveal from 'reveal.js';
-	import 'reveal.js/dist/reveal.css';
-	import 'reveal.js/dist/theme/black.css';
+	import Reveal from "reveal.js";
+	import "reveal.js/dist/reveal.css";
+	import "reveal.js/dist/theme/black.css";
 
-	import Slides from './Slides.svelte';
+	import Slides from "./Slides.svelte";
 
 	onMount(() => {
 		const deck = new Reveal({
 			plugins: [],
-			autoAnimateEasing: 'ease',
+			autoAnimateEasing: "ease",
 			autoAnimateDuration: 1,
 			hash: true
 		});
