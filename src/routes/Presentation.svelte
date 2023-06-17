@@ -2,14 +2,17 @@
 	import { onMount } from "svelte";
 
 	import Reveal from "reveal.js";
+	import Highlight from "reveal.js/plugin/highlight/highlight";
+	import Notes from "reveal.js/plugin/notes/notes";
 	import "reveal.js/dist/reveal.css";
 	import "reveal.js/dist/theme/black.css";
+	import "reveal.js/plugin/highlight/monokai.css";
 
 	import Slides from "./Slides.svelte";
 
 	onMount(() => {
 		const deck = new Reveal({
-			plugins: [],
+			plugins: [Highlight, Notes],
 			autoAnimateEasing: "ease",
 			autoAnimateDuration: 1,
 			hash: true

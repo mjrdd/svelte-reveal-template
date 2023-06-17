@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Slide } from "$lib/components";
+	import { Code, Slide } from "$lib/components";
 </script>
 
 <!-- Add your slides here -->
