@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import '../app.postcss';
+	import Presentation from './Presentation.svelte';
+</script>
+
+<svelte:head>
+	<title>Presentation</title>
+</svelte:head>
+
+<Presentation />
